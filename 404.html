@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Spinners - 404 (Page not found)</title>
+    <link rel="shortcut icon" href="./assets/css-spinners-logo.svg" />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        background-color: #1c1c1c;
+        color: #fff;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>404</h1>
+      <br />
+      <a id="home"><button>Return home</button></a>
+    </main>
+
+    <script>
+      document.querySelector("#home").href = window.location.origin.includes(
+        "github.io",
+      )
+        ? "https://axorax.github.io/css-spinners"
+        : window.location.origin;
+    </script>
+  </body>
+</html>
